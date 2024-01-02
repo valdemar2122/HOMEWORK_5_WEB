@@ -26,7 +26,7 @@ async def handle_command(command):
             await exchange_rate.fetch_last_n_days(days, ["USD", "EUR"])
 
             # Load the JSON file containing the fetched currency rates
-            with open("web_chat/currency.json", "r") as file:
+            with open("Part 2/currency.json", "r") as file:
                 currency_rates = json.load(file)
 
             # Prepare the response message with the fetched currency rates
